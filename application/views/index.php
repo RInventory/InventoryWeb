@@ -78,7 +78,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         	<?php $this->load->view($body);?>
             
 		<div class="copy">
-            <p>Copyright &copy; 2015 Modern. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+            <p>Copyright &copy; 2018 R-Inventory. ANT.TIF_C | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
 	    </div>
 		
        </div>

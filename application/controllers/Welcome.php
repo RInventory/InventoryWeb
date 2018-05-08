@@ -19,7 +19,7 @@ class Welcome extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index(){
-		$data = array('body' => 'barang/list');
+		$data = array('body' => 'home');
 		$this->load->view('index', $data);
 	}
 }

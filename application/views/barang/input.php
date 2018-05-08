@@ -1,27 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Demo CRUD</title>
-</head>
-<body>
-	<h2>Demo CRUD</h2>
-	<p><strong>Tambah Data</strong></p>
+<div class="col-md-12 graphs">
+	<div class="xs">
+  	 <h3>Tambah Barang</h3>
+    <div class="bs-example4" data-example-id="simple-responsive-table">
+      <a href="" class="btn btn-xs btn-info""><span class="glyphicon glyphicon-pencil"></span> Tambah </a>
+    <div class="row">
+                        <div class="col s12">
+                            <?php echo form_open('barang/insert');?>
 
-	<form action="create" method="post">
-		<?php echo $model->label['kode']; ?><br>
-		<input type="text" name="kode" size="10" maxlength="10"/><br><br>
+                            <?php $this->load->view($form)?>
+                            <button type="button" class="waves-effect waves-light btn white m-b-xs">KEMBALI</>
 
-		<?php echo $model->label['nama']; ?><br>
-		<input type="text" name="nama" size="30" maxlength="25"/><br><br>
-
-		<?php echo $model->label['harga']; ?><br>
-		<textarea name="harga"></textarea><br><br>
-
-		<?php echo $model->label['stok']; ?><br>
-		<textarea name="stok"></textarea><br><br>
-
-		<input type="submit" name="btnSubmit" value="Simpan" />
-		<input type="button" value="Batal" onclick="javascript:history.go(-1);" />
-	</form>
-</body>
-</html>
+                            <button type="submit" class="waves-effect waves-light btn blue m-b-xs text-right">SIMPAN</button>
+                            <?php echo form_close(); ?>
+                        </div>
+                    </div>
+  </div>
+  </div>
+</div>
