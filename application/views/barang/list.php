@@ -18,7 +18,7 @@
             <th>Opsi</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody> 
           <?php $no = 1; 
           foreach ($daftarbarang as $d) { ?>
           <tr>
