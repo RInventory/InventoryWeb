@@ -40,5 +40,11 @@
 	        $this->db->insert('login',$data);
 	        redirect('Petugas/list_petugas');
 	    }
+
+	    public function delete(){
+	    	$username = $this->uri->segment(3);
+			$this->ModelPetugas->delete($username);
+		 	redirect('Petugas/list_petugas');
+	    }
 	}
 ?>

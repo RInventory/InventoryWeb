@@ -20,8 +20,8 @@ class Barang extends CI_Controller{
 
 	public function input(){
         $data = array(
-            'body'      => 'Barang/input',
-            'form'      => 'Barang/form',
+            'body'      => 'Barang/Input',
+            'form'      => 'Barang/Form',
             'daftarkategori' => $this->Kategori->list_kategori()->result()
         );
 
@@ -39,6 +39,12 @@ class Barang extends CI_Controller{
             'kategori_id_kategori' => $this->input->post('kat')
         );
         $this->db->insert('barang',$data);
+        redirect('Barang/list_barang');
+    }
+
+    public function delete(){
+        $id_barang = $this->uri->segment(3);
+        $this->ModelBarang->delete($id_barang);
         redirect('Barang/list_barang');
     }
 }

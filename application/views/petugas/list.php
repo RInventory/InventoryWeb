@@ -2,7 +2,7 @@
   <div class="xs">
     <h3>Petugas</h3>
     <div class="bs-example4" data-example-id="simple-responsive-table">
-      <a href="<?php echo base_url()?>Petugas/Input" class="btn btn-xs btn-info""><span class="glyphicon glyphicon-pencil"></span> Tambah </a>
+      <a href="<?php echo base_url()?>ConPetugas/Input" class="btn btn-xs btn-info""><span class="glyphicon glyphicon-plus"></span> Tambah </a>
       <div class="table-responsive">
         <table class="table">
           <thead>
@@ -31,7 +31,8 @@
               <!-- <td><?php echo $d->gambar_barang ?></td> -->
               <!-- <td><?php echo $d->kategori_id_barang ?></td> -->
               <td>
-                <a href="" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-pencil"></span> Edit </a><a href="" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-trash"></span> Hapus </a>
+                <a href="" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-pencil"></span> Edit </a> 
+                <a href="<?php echo base_url("Petugas/delete/$petugas->username");?>" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-trash"></span> Hapus </a>
               </td> 
             </tr>
             <?php $no++; } ?>
