@@ -1,9 +1,9 @@
 <ul class="nav" id="side-menu">
     <li>
-        <a href="<?php echo base_url()?>"><i class="glyphicon glyphicon-home"></i>      Home</a>
+        <a href="<?php echo base_url()?>"><i class="glyphicon glyphicon-home" color='#ffffff'></i>      Home</a>
     </li>
     <li>
-        <a href="#"><i class="glyphicon glyphicon-bed"></i> Barang baru<span class="fa arrow"></span></a>
+        <a href="#"><i class="glyphicon glyphicon-bed"></i> Barang<span class="fa arrow"></span></a>
             <ul class="nav nav-second-level">
                 <li>
                     <a href="<?php echo base_url()?>barang/list_barang">   List Barang</a>
