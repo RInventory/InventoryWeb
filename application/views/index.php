@@ -65,7 +65,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <?php
-                        $this->load->view('menu');
+                        $this->load->view('Menu');
                     ?>
                 </div>
                 <!-- /.sidebar-collapse -->
