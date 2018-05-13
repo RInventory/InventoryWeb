@@ -1,6 +1,6 @@
 <div class="col-md-12 graphs">
   <div class="xs">
-    <h3>Tambah Petugas</h3>
+    <h3>Edit Petugas</h3>
     <div class="bs-example4" data-example-id="simple-responsive-table">
       <div class="table-responsive">
         <table class="table">
