@@ -1,12 +1,13 @@
 <ul class="nav" id="side-menu">
     <li>
-        <a href="<?php echo base_url()?>"><i class="glyphicon glyphicon-home" color='#ffffff'></i>      Home</a>
+        <a href="<?php echo base_url()?>"><i class="glyphicon glyphicon-home"></i>      Home</a>
+        <font color='#00ffff'></font>
     </li>
     <li>
         <a href="#"><i class="glyphicon glyphicon-bed"></i> Barang<span class="fa arrow"></span></a>
             <ul class="nav nav-second-level">
                 <li>
-                    <a href="<?php echo base_url()?>barang/list_barang">   List Barang</a>
+                    <a href="<?php echo base_url()?>Barang/list_barang">   List Barang</a>
                 </li>
             </ul>
     </li>
@@ -14,7 +15,7 @@
         <a href="#"><i class="glyphicon glyphicon-user"></i>    Pegawai<span class="fa arrow"></span></a>
             <ul class="nav nav-second-level">
                 <li>
-                    <a href="<?php echo base_url()?>">List Pegawai</a>
+                    <a href="<?php echo base_url()?>Petugas/list_petugas">List Pegawai</a>
                 </li>
             </ul>
     </li>

@@ -731,6 +731,7 @@ i.icon_13{
 .list-unstyled {
   padding-left: 0;
   list-style: none;
+  color: #ffffff;
 }
 .stats-info ul li {
   border-bottom: 1px solid #eee;
@@ -2678,6 +2679,7 @@ h2#h2{
 }
 h3#h3{
   font-size:15px !important;
+  color: #00ffff;
 }
 h4#h4{
   font-size:14px !important;
