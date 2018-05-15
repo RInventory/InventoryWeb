@@ -1,6 +1,6 @@
 <div class="col-md-12 graphs">
 	<div class="xs">
-  	<h3>Barang</h3>
+  	<h3>List Barang</h3>
     <div class="bs-example4" data-example-id="simple-responsive-table">
       <a href="<?php echo base_url()?>Barang/Input" class="btn btn-xs btn-info""><span class="glyphicon glyphicon-plus"></span> Tambah </a>
       <div class="table-responsive">

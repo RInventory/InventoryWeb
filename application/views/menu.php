@@ -1,6 +1,7 @@
 <ul class="nav" id="side-menu">
     <li>
         <a href="<?php echo base_url()?>"><i class="glyphicon glyphicon-home"></i>      Home</a>
+        <font color='#00ffff'></font>
     </li>
     <li>
         <a href="#"><i class="glyphicon glyphicon-bed"></i> Barang<span class="fa arrow"></span></a>
