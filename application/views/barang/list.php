@@ -29,10 +29,10 @@
               <td><?php echo $d->stok_barang ?></td>
               <td><?php echo $d->tmp_simpanbarang ?></td>
               <!-- <td><?php echo $d->gambar_barang ?></td> -->
-              <!-- <td>"<?php echo $d->id_kategori;?>"><?php echo $d->nama_kategori;?></td> -->
+              <td>"<?php echo $d->kategori_id_kategori;?>"</td>
               <td>
-                <a href="" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-pencil"></span> Edit </a>
-                <a href="<?php echo base_url("Barang/delete/$d->id_barang");?>" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-trash"></span> Hapus </a>
+                <a href="<?php echo base_url().'Barang/edit/'.$d->id_barang?>" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-pencil"></span> Edit </a> 
+                <a href="<?php echo base_url().'Barang/delete/'.$d->id_barang?>" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-trash"></span> Hapus </a>
               </td> 
             </tr>
             <?php $no++; } ?>

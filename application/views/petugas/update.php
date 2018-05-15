@@ -1,4 +1,4 @@
-<?php echo form_open('Petugas/update');?>
+<?php echo form_open('Petugas/Update');
+    echo form_hidden('username', $this->uri->segment(3));?>
 	<?php $this->load->view($form)?>
-    	<!-- <button type="submit"> SIMPAN</button> -->
 <?php echo form_close(); ?>

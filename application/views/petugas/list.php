@@ -31,8 +31,8 @@
               <!-- <td><?php echo $d->gambar_barang ?></td> -->
               <!-- <td><?php echo $d->kategori_id_barang ?></td> -->
               <td>
-                <a href="<?php echo base_url("Petugas/edit/$petugas->username");?>" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-pencil"></span> Edit </a> 
-                <a href="<?php echo base_url("Petugas/delete/$petugas->username");?>" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-trash"></span> Hapus </a>
+                <a href="<?php echo base_url().'Petugas/edit/'.$petugas->username?>" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-pencil"></span> Edit </a> 
+                <a href="<?php echo base_url().'Petugas/delete/'.$petugas->username?>" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-trash"></span> Hapus </a>
               </td> 
             </tr>
             <?php $no++; } ?>
