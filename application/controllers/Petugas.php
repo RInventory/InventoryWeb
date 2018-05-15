@@ -44,7 +44,8 @@
 
 	    public function delete(){
 	    	$username = $this->uri->segment(3);
-			$this->ModelPetugas->delete($username);
+			$this->db->where('username',$username);
+			$this->db->delete('login');
 		 	redirect('Petugas/list_petugas');
 	    }
 
@@ -53,7 +54,7 @@
 			$data = array(
 		 	'body'      => 'Petugas/Update',
 	        'form'      => 'Petugas/FormEdit',
-	        'show' 		=> $this->ModelPetugas->edit_petugas($username),
+	        'petugas'  => $this->ModelPetugas->update($username)->row_array(),
 	        'daftarlevel' => $this->ModelLevel->list_level()->result()
 		 	);
 
@@ -71,8 +72,9 @@
 	            'notelp_pegawai' => $this->input->post('notelp'),
 	            'level_id_level' => $this->input->post('level')
 			);
-		 	$this->ModelPetugas->update($username,$data);
-			redirect('Petugas/list_petugas');
+		 	$this->db->where('username',$username);
+	        $this->db->update('login',$data);
+	        redirect('Petugas/list_petugas');
 		}
 	}
 ?>
