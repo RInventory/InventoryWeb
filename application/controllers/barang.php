@@ -11,7 +11,7 @@ class barang extends CI_Controller{
 	public function list_barang(){
 		$data = array(
 			'body'           => 'Barang/List', 
-			'daftarbarang'   => $this->ModelBarang->list_barang()->result(),
+			'daftarbarang'   => $this->ModelBarang->list_barang(),
             
 		);
 
