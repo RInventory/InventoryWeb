@@ -1,8 +1,6 @@
 <?php 
-/**
- * 
- */
-class Kategori extends CI_Model
+
+class ModelKategori extends CI_Model
 {
 	
 	function list_kategori(){

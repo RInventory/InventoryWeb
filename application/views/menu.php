@@ -20,6 +20,14 @@
             </ul>
     </li>
     <li>
+        <a href="#"><i class="glyphicon glyphicon-user"></i>    Supplier<span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+                <li>
+                    <a href="<?php echo base_url()?>Supplier/list_supplier">List Supplier</a>
+                </li>
+            </ul>
+    </li>
+    <li>
         <a href="#"><i class="glyphicon glyphicon-file"></i>    Laporan<span class="fa arrow"></span></a>
             <ul class="nav nav-second-level">
                 <li>

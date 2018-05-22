@@ -84,11 +84,14 @@ body a{
 }
 .label.label-info {
   background-color:#ef553a;
+  
 }
 .label {
   padding: 4px 6px;
   border: none;
   text-shadow: none;
+  /*color: #000000; 
+  font-size: medium;*/
 }
 .warning_1, .warning_11{
 	padding:10px 16px !important;
