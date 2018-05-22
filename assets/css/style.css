@@ -48,7 +48,7 @@ body a{
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
-  border: 1px solid #e1e6ef;
+  border: 1px solid #ffffff;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.125);
   -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.125);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.125);
@@ -88,6 +88,9 @@ body a{
 .label {
   padding: 4px 6px;
   border: none;
+ 
+
+
   text-shadow: none;
 }
 .warning_1, .warning_11{
@@ -253,6 +256,7 @@ i.nav_icon {
 }
 .navbar-form.navbar-right input[type="text"] {
   color: #fff;
+  font-color:#ffffff;
 }
 form.navbar-form.navbar-right {
   margin:9px 0 0 0;
@@ -280,6 +284,7 @@ ul.dropdown {
 	padding:0;
 	margin:0;
 	list-style:none;
+  font-color: #ffffff;
 }
 .span_1{
   background: #000;
@@ -290,6 +295,14 @@ ul.dropdown {
   overflow-y: auto;
   z-index: 100;
   top: 0;
+}
+a {
+font-family:Arial, Helvetica, sans-serif;
+color:#e1e6ef;
+}
+
+a:hover {
+font-color:#ffffff;
 }
 .col-md-10.span_1_of_span_2 {
   padding:1em;
@@ -1278,6 +1291,7 @@ ul.collection {
 }
 ul.collection li{
 	margin-bottom:2em;
+  color: #045FB4;
 }
 ul.collection li.email_last{
 	margin-bottom:0;
@@ -1482,6 +1496,7 @@ div.checker input {
 }
 .table > thead > tr > th {
   border-bottom: 1px solid #ddd !important;
+  color: #0B2161;
 }
 .badge-success, .bg-green, .bootstrap-switch-success, .btn-success {
   border-color: #ef553a;
@@ -2139,6 +2154,7 @@ ul.new {
 }
 ul.new li.new_left{
   float: left;
+  color: #ffffff;
 }
 ul.new li.new_left p, p.sign{
   font-weight:300;
@@ -2519,8 +2535,13 @@ ul.new {
   margin-bottom:5px;
 }
 .navbar-default .navbar-toggle {
-  border-color:#000;
+  border-color:#ffffff;
   background-color:#000 !important;
+}
+
+.navbar-default .navbar-brand {
+  color: #ffffff;
+
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #fff;
@@ -2679,7 +2700,7 @@ h2#h2{
 }
 h3#h3{
   font-size:15px !important;
-  color: #00ffff;
+  color: #045FB4;
 }
 h4#h4{
   font-size:14px !important;
