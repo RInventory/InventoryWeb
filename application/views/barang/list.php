@@ -1,8 +1,9 @@
 <div class="col-md-12 graphs">
-  <div class="xs">
-    <h3>List Barang</h3>
+	<div class="xs">
+  	<h3>List Barang</h3>
     <div class="bs-example4" data-example-id="simple-responsive-table">
       <a href="<?php echo base_url()?>Barang/Input" class="btn btn-xs btn-info""><span class="glyphicon glyphicon-plus"></span> Tambah </a>
+      <?=form_open_multipart('Barang/insert')?>
       <div class="table-responsive">
         <table class="table">
           <thead>
@@ -29,8 +30,8 @@
               <td><?php echo $d->stok_barang ?></td>
               <td><?php echo $d->tmp_simpanbarang ?></td>
               <td><?php echo $d->nama_kategori;?></td>
-              <td><!-- <?php echo $d->gambar_barang ?> -->
-                <img class="img-thumbnail" src="<?php echo base_url() . 'assets/images/'.$d->gambar_barang  ?>"/>
+              <td><?php echo $d->gambar_barang ?>
+                <!-- <img class="img-thumbnail" src="<?php echo base_url().'assets/image_upload/'.$d->gambar_barang ?>"/> -->
               </td>
               <td>
                 <a href="<?php echo base_url().'Barang/edit/'.$d->id_barang?>" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-pencil"></span> Edit </a> 

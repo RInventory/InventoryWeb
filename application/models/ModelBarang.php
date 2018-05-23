@@ -14,8 +14,8 @@
 		$this->db->delete('barang');
     	}
 
-		function update($id){
-        return $this->db->get_where('barang', array('id_barang'=>$id));
+		public function update($id){
+        	return $this->db->get_where('barang', array('id_barang'=>$id));
     	}
 	}
 ?>

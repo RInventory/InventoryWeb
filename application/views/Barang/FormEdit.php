@@ -44,6 +44,12 @@
 					</select>
          		</td>
          	</tr>
+            <tr>
+                <td>
+                    <label class="control-label col-lg-3" style="color: #000000; font-size: medium;" for="gambar">Gambar</label>
+                    <input id="gambar" name="gambar" type="File" class="form-control">
+                </td>
+            </tr>
         </table>
         <div class="form-group">
               <button type="submit" class="btn btn-primary">Submit</button>

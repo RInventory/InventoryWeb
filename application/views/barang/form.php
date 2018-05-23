@@ -1,6 +1,7 @@
 <div class="col-md-12 graphs">
   <div class="xs">
     <h3>Tambah Barang</h3>
+
     <div class="bs-example4" data-example-id="simple-responsive-table">
       <div class="table-responsive">
         <table class="table">
@@ -44,6 +45,12 @@
 					</select>
          		</td>
          	</tr>
+            <tr>
+                <td>
+                    <label class="control-label col-lg-3" style="color: #000000; font-size: medium;">Gambar</label>
+                    <input id="gambar" name="gambar" type="file" class="validate">
+                </td>
+            </tr>
         </table>
         <div class="form-group">
             <button type="submit" class="btn btn-primary">Simpan</button>
