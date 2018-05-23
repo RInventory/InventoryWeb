@@ -46,8 +46,8 @@
          	</tr>
             <tr>
                 <td>
-                    <label class="control-label col-lg-3" style="color: #000000; font-size: medium;" for="gambar">Gambar</label>
-                    <input id="gambar" name="gambar" type="File" class="form-control">
+                    <label class="control-label col-lg-3" style="color: #000000; font-size: medium;">Gambar</label>
+                    <input id="gambar" name="gambar" type="file" class="validate" value="<?php echo @$barang['gambar_barang']?>">
                 </td>
             </tr>
         </table>
