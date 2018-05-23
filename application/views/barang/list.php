@@ -1,6 +1,6 @@
 <div class="col-md-12 graphs">
-	<div class="xs">
-  	<h3>List Barang</h3>
+  <div class="xs">
+    <h3>List Barang</h3>
     <div class="bs-example4" data-example-id="simple-responsive-table">
       <a href="<?php echo base_url()?>Barang/Input" class="btn btn-xs btn-info""><span class="glyphicon glyphicon-plus"></span> Tambah </a>
       <div class="table-responsive">
@@ -25,11 +25,13 @@
               <td><?php echo $no ?></td>
               <td><?php echo $d->id_barang ?></td>
               <td><?php echo $d->nama_barang ?></td>
-              <td><?php echo $d->harga_barang ?></td>
+              <td>Rp. <?php echo number_format($d->harga_barang,0,",","."); ?></td>
               <td><?php echo $d->stok_barang ?></td>
               <td><?php echo $d->tmp_simpanbarang ?></td>
-              <!-- <td><?php echo $d->gambar_barang ?></td> -->
-              <td>"<?php echo $d->kategori_id_kategori;?>"</td>
+              <td><?php echo $d->nama_kategori;?></td>
+              <td><!-- <?php echo $d->gambar_barang ?> -->
+                <img class="img-thumbnail" src="<?php echo base_url() . 'assets/images/'.$d->gambar_barang  ?>"/>
+              </td>
               <td>
                 <a href="<?php echo base_url().'Barang/edit/'.$d->id_barang?>" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-pencil"></span> Edit </a> 
                 <a href="<?php echo base_url().'Barang/delete/'.$d->id_barang?>" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-trash"></span> Hapus </a>

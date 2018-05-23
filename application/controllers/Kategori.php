@@ -4,7 +4,6 @@
 		public function __construct(){
 			parent::__construct();
 			$this->load->model('ModelKategori');
-        	$this->load->model('ModelLevel');
 		}
 
 		public function list_kategori(){
@@ -22,7 +21,6 @@
 	        $data = array(
 	            'body'      => 'Kategori/Input',
 	            'form'      => 'Kategori/Form',
-	            'daftarlevel' => $this->ModelLevel->list_level()->result()
 	        );
 
 	        $this->load->view('Index', $data);
@@ -40,6 +38,7 @@
 	    public function delete(){
 	    	$id_kategori = $this->uri->segment(3);
 			$this->db->where('id_kategori',$id_kategori);
+			$this->db->delete('kategori');
 			redirect('Kategori/list_kategori');
 	    }
 
@@ -47,8 +46,8 @@
 	    	$id_kategori = $this->uri->segment(3);
 			$data = array(
 		 	'body'      => 'Kategori/Update',
-	        'form'      => 'Kategori/Form',
-	        'kategori'  => $this->ModelKategori->update($id_kategori)->row_array(),
+	        'form'      => 'Kategori/FormEdit',
+	        'kategori'  => $this->ModelKategori->update($id_kategori)->row_array()
 	        );
 
 		 	$this->load->view('Index', $data);

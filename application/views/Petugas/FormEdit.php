@@ -47,7 +47,7 @@
         </table>
         <div class="form-group">
               <button type="submit" class="btn btn-primary">Submit</button>
-              <button type="reset" class="btn btn-default">Reset</button>
+              <button type="reset" class="btn btn-default">Kembali</button>
             </div>
       </div><!-- /.table-responsive -->
     </div>

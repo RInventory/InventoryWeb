@@ -28,8 +28,6 @@
               <td><?php echo $petugas->alamat_pegawai ?></td>
               <td><?php echo $petugas->notelp_pegawai ?></td>
               <td><?php echo $petugas->level_id_level ?></td>
-              <!-- <td><?php echo $d->gambar_barang ?></td> -->
-              <!-- <td><?php echo $d->kategori_id_barang ?></td> -->
               <td>
                 <a href="<?php echo base_url().'Petugas/edit/'.$petugas->username?>" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-pencil"></span> Edit </a> 
                 <a href="<?php echo base_url().'Petugas/delete/'.$petugas->username?>" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-trash"></span> Hapus </a>
