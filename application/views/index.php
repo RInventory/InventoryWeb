@@ -4,6 +4,13 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
+<?php 
+
+if (!$this->ion_auth->logged_in())
+        {
+            redirect('auth/login');
+        }
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -45,7 +52,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?php echo base_url()?>">Modern</a>
+                <a class="navbar-brand" href="<?php echo base_url()?>">R-Inventory</a>
             </div>
             <!-- /.navbar-header -->
             <ul class="nav navbar-nav navbar-right">
@@ -57,7 +64,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </li>
                         <li class="m_2"><a href="#"><i class="fa fa-user"></i> Profile</a></li>
                         <li class="divider"></li>
-                        <li class="m_2"><a href="#"><i class="fa fa-lock"></i> Logout</a></li>  
+                        <li class="m_2"><a href="<?php echo base_url()?>Auth/logout"><i class="fa fa-lock"></i> Logout</a></li>  
                     </ul>
                 </li>
 			</ul>

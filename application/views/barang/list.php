@@ -30,7 +30,7 @@
               <td><?php echo $d->stok_barang ?></td>
               <td><?php echo $d->tmp_simpanbarang ?></td>
               <td><?php echo $d->nama_kategori;?></td>
-              <td><!-- <?php echo $d->gambar_barang ?> -->
+              <td>
                 <img class="img-thumbnail" src="<?php echo base_url().$d->gambar_barang?>"/>
               </td>
               <td>

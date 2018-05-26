@@ -56,10 +56,11 @@
 	    public function update(){
 		 	$id_kategori = $this->input->post('id_kategori');
 		 	$data = array(
-				'id_kategori' => $this->input->post('id_kategori'),
-	            'nama_kategori' => $this->input->post('nama_kategori')
+				'id_kategori'     	=> $this->input->post('idkategori'),
+	            'nama_kategori' 	=> $this->input->post('namakategori')
 			);
 		 	$this->db->where('id_kategori',$id_kategori);
+	        $this->db->update('kategori',$data);
 	        redirect('Kategori/list_kategori');
 		}
 	}
