@@ -4,10 +4,17 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
+<?php 
+
+if (!$this->ion_auth->logged_in())
+        {
+            redirect('auth/login');
+        }
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>R-Inventory | Home </title>
+<title>R-Inventory</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -45,19 +52,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?php echo base_url()?>">Modern</a>
+                <a class="navbar-brand" href="<?php echo base_url()?>">R-Inventory</a>
             </div>
             <!-- /.navbar-header -->
             <ul class="nav navbar-nav navbar-right">
 			    <li class="dropdown">
-                    <a href="#" class="dropdown-toggle avatar" data-toggle="dropdown"><img src="<?php echo base_url()?>assets/images/1.png"><span class="badge">9</span></a>
+                    <a href="#" class="dropdown-toggle avatar" data-toggle="dropdown"><img src="<?php echo base_url()?>assets/images/img1.png"><span class="badge"></span></a>
                     <ul class="dropdown-menu">
                         <li class="dropdown-menu-header text-center">
                             <strong>Settings</strong>
                         </li>
                         <li class="m_2"><a href="#"><i class="fa fa-user"></i> Profile</a></li>
                         <li class="divider"></li>
-                        <li class="m_2"><a href="#"><i class="fa fa-lock"></i> Logout</a></li>  
+                        <li class="m_2"><a href="<?php echo base_url()?>Auth/logout"><i class="fa fa-lock"></i> Logout</a></li>  
                     </ul>
                 </li>
 			</ul>

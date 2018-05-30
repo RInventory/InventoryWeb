@@ -22,7 +22,7 @@
         <a href="#"><i class="glyphicon glyphicon-user"></i>    Pegawai<span class="fa arrow"></span></a>
             <ul class="nav nav-second-level">
                 <li>
-                    <a href="<?php echo base_url()?>Petugas/list_petugas">List Pegawai</a>
+                    <a href="<?php echo base_url()?>auth/index">List Pegawai</a>
                 </li>
             </ul>
     </li>

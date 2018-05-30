@@ -8,7 +8,7 @@
          	<tr>
          		<td>
          			<label class="control-label col-lg-3" style="color: #000000; font-size: medium;">Kode Barang</label>
-                    <input type="text" name="kode" placeholder="kodebarang" style="color: #000;">
+                    <input type="number" name="kode" placeholder="kodebarang" style="color: #000;">
          		</td>
          	</tr>
          	<tr>

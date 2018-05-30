@@ -7,7 +7,7 @@
          	<tr>
          		<td>
          			<label class="control-label col-lg-3" style="color: #000000; font-size: medium;">Kode Barang</label>
-                    <input type="text" name="kode" placeholder="kodebarang" style="color: #000;" value="<?php echo @$barang['id_barang']?>">
+                    <input type="number" name="kode" placeholder="kodebarang" style="color: #000;" value="<?php echo @$barang['id_barang']?>">
          		</td>
          	</tr>
          	<tr>
@@ -46,8 +46,8 @@
          	</tr>
             <tr>
                 <td>
-                    <label class="control-label col-lg-3" style="color: #000000; font-size: medium;" for="gambar">Gambar</label>
-                    <input id="gambar" name="gambar" type="File" class="form-control">
+                    <label class="control-label col-lg-3" style="color: #000000; font-size: medium;">Gambar</label>
+                    <input id="gambar" name="gambar" type="file" class="validate" value="<?php echo @$barang['gambar_barang']?>">
                 </td>
             </tr>
         </table>

@@ -20,6 +20,6 @@ class Welcome extends CI_Controller {
 	 */
 	public function index(){
 		$data = array('body' => 'home');
-		$this->load->view('index', $data);
+		$this->load->view('Index', $data);
 	}
 }

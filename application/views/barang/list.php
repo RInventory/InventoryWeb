@@ -30,8 +30,8 @@
               <td><?php echo $d->stok_barang ?></td>
               <td><?php echo $d->tmp_simpanbarang ?></td>
               <td><?php echo $d->nama_kategori;?></td>
-              <td><?php echo $d->gambar_barang ?>
-                <!-- <img class="img-thumbnail" src="<?php echo base_url().'assets/image_upload/'.$d->gambar_barang ?>"/> -->
+              <td>
+                <img class="img-thumbnail" src="<?php echo base_url().$d->gambar_barang?>"/>
               </td>
               <td>
                 <a href="<?php echo base_url().'Barang/edit/'.$d->id_barang?>" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-pencil"></span> Edit </a> 
