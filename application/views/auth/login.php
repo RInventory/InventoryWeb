@@ -50,10 +50,9 @@
   <!-- Bootstrap Core JavaScript -->
   <script src="<?php echo base_url()?>assets/js/bootstrap.min.js"></script>
 </head>
-
 <body id="login">
   <div class="login-logo">
-    <!-- <img src="<?php echo base_url()?>assets/images/logo1.png" alt=""/> -->
+    <img src="<?php echo base_url()?>assets/images/logo1.png" alt=""/>
   </div>
   <h2 class="form-heading"><?php echo lang('login_heading');?></h2>
   <center><p><?php echo lang('login_subheading');?></p></center>

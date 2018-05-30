@@ -6,37 +6,15 @@
 			$this->load->model('ModelLaporan');
 		}
 
-		public function list_masuk(){
+		public function list_laporan(){
 		$data = array(
-			'body'           => 'Laporan/Masuk', 
-			'daftarmasuk'   => $this->ModelLaporan->list_masuk()->result()
+			'body'           => 'Laporan/List', 
+			'daftarLaporan'   => $this->ModelLaporan->list_Laporan()->result()
             
 		);
 
 			$this->load->view('Index', $data);
 		}
-
-		public function list_keluar(){
-		$data = array(
-			'body'           => 'Laporan/Keluar', 
-			'daftarkeluar'   => $this->ModelLaporan->list_keluar()->result()
-            
-		);
-
-			$this->load->view('Index', $data);
-		}
-
-		public function list_retur(){
-		$data = array(
-			'body'           => 'Laporan/Retur', 
-			'daftarretur'   => $this->ModelLaporan->list_retur()->result()
-            
-		);
-
-			$this->load->view('Index', $data);
-		}
-
-
 
 	}
 ?>
