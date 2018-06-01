@@ -1,5 +1,5 @@
 <?php
-	class LaporanMasuk extends CI_Controller
+	class Laporan extends CI_Controller
 	{
 		public function __construct(){
 			parent::__construct();
@@ -9,7 +9,7 @@
 		public function list_masuk(){
 		$data = array(
 			'body'           => 'LaporanMasuk/List', 
-			'daftarlaporanmasuk'   => $this->ModelLaporanMasuk->list_masuk()
+			'daftarmasuk'   => $this->ModelLaporanMasuk->list_masuk()
             
 		);
 

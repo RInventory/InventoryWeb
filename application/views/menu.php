@@ -38,13 +38,13 @@
         <a href="#"><i class="glyphicon glyphicon-file"></i>    Laporan<span class="fa arrow"></span></a>
             <ul class="nav nav-second-level">
                 <li>
-                    <a href="<?php echo base_url()?>LaporanMasuk/list_masuk">Masuk</a>
+                    <a href="<?php echo base_url()?>Laporan/list_masuk">Masuk</a>
                 </li>
                 <li>
-                    <a href="<?php echo base_url()?>">Keluar</a>
+                    <a href="<?php echo base_url()?>LaporanKeluar/list_keluar">Keluar</a>
                 </li>
                 <li>
-                    <a href="<?php echo base_url()?>">Retur</a>
+                    <a href="<?php echo base_url()?>LaporanRetur/list_retur">Retur</a>
                 </li>
             </ul>
     </li>    
