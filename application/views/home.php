@@ -1,6 +1,12 @@
 <div class="grid_3 grid_4">
-  <h2><center>Welcome</center></h2>
-  <div class="bs-example">
-    <p>Welcome to R-Inventory</p>
+	<div>
+	<center>
+		<img src="<?php echo base_url()?>assets/images/logo1.png" alt=""/><br><br><br>
+    </center>
     </div>
-  </div>
+    <div>
+    	<center>
+    	<h2 >Welcome to R-Inventory Admin </h2>
+    </center>
+    </div>
+ </div>
