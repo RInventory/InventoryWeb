@@ -35,23 +35,22 @@
               </td>
               <td>
                 <a href="<?php echo base_url().'Barang/edit/'.$d->id_barang?>" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-pencil"></span> Edit </a> 
-
                 <button type="button" class="btn btn-xs btn-danger" data-toggle="modal" data-target="#myModal<?php echo $d->id_barang ?>"><span class="glyphicon glyphicon-trash"></span>Hapus</button>
 
-                <div class="modal fade" id="myModal<?php echo $d->id_barang ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                      </div>
-                      <div class="modal-body">
-                        <h2>Yakin Ingin Menghapus Data?</h2>
-                        <h5 style="color: #000">Jika Tidak Bisa Menghapus, Silahkan Hapus Data Barang yang Memiliki Kode Barang yang Sama</h6>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Tidak</button>
-                        <a href="<?php echo base_url().'Barang/delete/'.$d->id_barang?>" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-trash"></span> Hapus </a>
-              </td> 
+                 <div class="modal fade" id="myModal<?php echo $d->id_barang ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        </div>
+                        <div class="modal-body">
+                          <h2>Yakin Ingin Menghapus Data?</h2>
+                          <h5 style="color: #000">Jika Tidak Bisa Menghapus, Silahkan Hapus Data Barang yang Memiliki Kode Barang yang Sama</h6>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Tidak</button>
+                          <a href="<?php echo base_url().'Barang/delete/'.$d->id_barang?>" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-trash"></span> Hapus </a>
+                </td> 
             </tr>
             <?php $no++; } ?>
           </tbody>
