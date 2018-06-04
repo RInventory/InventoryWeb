@@ -18,12 +18,18 @@ class Api extends CI_Controller
     {
         $identity = $this->input->post('email');
         $password = $this->input->post('password');
+        // $identity = "admin@admin.com";
+        // $password = "password";
         //$result = $this->ion_auth->login($username, $password);
         //$result = $this->Api_m->login($username,$password);
       //  echo json_encode($result);
 
       $result = $this->ion_auth->login($identity, $password, FALSE);
-                echo json_encode($result);
+      if ($result) {
+          echo "berhasil";
+      }else{
+        echo "invalid";
+      }
     }
 }
 ?>
