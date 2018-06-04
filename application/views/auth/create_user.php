@@ -148,6 +148,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       </p>
       
       <?php
+      
       if($identity_column!=='email') {
           echo '<p>';
           echo lang('create_user_identity_label', 'identity');
