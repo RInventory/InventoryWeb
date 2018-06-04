@@ -81,7 +81,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <li class="dropdown-menu-header text-center">
                             <strong>Settings</strong>
                         </li>
-                        <li class="m_2"><a href="#"><i class="fa fa-user"></i> Profile</a></li>
                         <li class="divider"></li>
                         <li class="m_2"><a href="<?php echo base_url()?>Auth/logout"><i class="fa fa-lock"></i> Logout</a></li>  
                     </ul>
@@ -131,12 +130,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <td><?php echo htmlspecialchars($user->last_name,ENT_QUOTES,'UTF-8');?></td>
             <td><?php echo htmlspecialchars($user->email,ENT_QUOTES,'UTF-8');?></td>
 			<td>
-				<?php foreach ($user->groups as $group):?>
+				<button type="button" class="btn btn-info">
+        <?php foreach ($user->groups as $group):?>
 					<?php echo anchor("auth/edit_group/".$group->id, htmlspecialchars($group->name,ENT_QUOTES,'UTF-8')) ;?><br />
                 <?php endforeach?>
+        </button>
 			</td>
-			<td><?php echo ($user->active) ? anchor("auth/deactivate/".$user->id, lang('index_active_link')) : anchor("auth/activate/". $user->id, lang('index_inactive_link'));?></td>
-			<td><?php echo anchor("auth/edit_user/".$user->id, 'Edit') ;?></td>
+			<td>
+        <button type="button" class="btn btn-info">
+        <?php echo ($user->active) ? anchor("auth/deactivate/".$user->id, lang('index_active_link')) : anchor("auth/activate/". $user->id, lang('index_inactive_link'));?>
+        </button>
+      </td>
+			<td>
+        <button type="button" class="btn btn-info">
+        <?php echo anchor("auth/edit_user/".$user->id, 'Edit') ;?>
+        </button>
+      </td>
 		</tr>
 	<?php endforeach;?>
           </tbody>
