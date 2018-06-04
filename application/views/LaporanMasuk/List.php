@@ -8,7 +8,7 @@
             <tr>
               <th>No</th>
               <th>ID Detail</th>
-              <th>Stok Barang</th>
+              <th>Jumlah Barang</th>
               <th>Kode Barang Masuk</th>
               <th>Nama Barang</th>
               <th>Tempat Simpan</th>
@@ -23,20 +23,22 @@
           <tbody> 
             <?php $no = 1; 
             foreach ($daftarmasuk as $Laporan) { ?>
-            <tr>
-              <td><?php echo $no ?></td>
-              <td><?php echo $detail_masuk->iddetail_masuk ?></td>
-              <td><?php echo $detail_masuk->stok_masuk ?></td>
-              <td><?php echo $detail_masuk->barang_masuk_kode_masuk ?></td>
-              <td><?php echo $barang->nama_barang ?></td>
-              <td><?php echo $barang->tmp_simpanbarang ?></td>
-              <td><?php echo $barang->gambar_barang ?></td>
-              <td><?php echo $barang->kategori_id_kategori ?></td>
-              <td><?php echo $barang_masuk->tgl_masuk ?></td>
-              <td><?php echo $barang_masuk->supplier_id_supplier ?></td>
-              <td><?php echo $barang_masuk->keterangan_masuk ?></td>
-              <td><?php echo $barang_masuk->users_id ?></td>
-            </tr>
+              <div style="background-color: #0B2161; color: #000000">
+                <tr>
+                  <td><?php echo $no ?></td>
+                  <td><?php echo $detail_masuk->iddetail_masuk ?></td>
+                  <td><?php echo $detail_masuk->stok_masuk ?></td>
+                  <td><?php echo $detail_masuk->barang_masuk_kode_masuk ?></td>
+                  <td><?php echo $barang->nama_barang ?></td>
+                  <td><?php echo $barang->tmp_simpanbarang ?></td>
+                  <td><?php echo $barang->gambar_barang ?></td>
+                  <td><?php echo $barang->kategori_id_kategori ?></td>
+                  <td><?php echo $barang_masuk->tgl_masuk ?></td>
+                  <td><?php echo $barang_masuk->supplier_id_supplier ?></td>
+                  <td><?php echo $barang_masuk->keterangan_masuk ?></td>
+                  <td><?php echo $barang_masuk->users_id ?></td>
+                </tr>
+              </div>
             <?php $no++; } ?>
           </tbody>
         </table>

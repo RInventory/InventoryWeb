@@ -992,6 +992,7 @@ button.note-color-btn {
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
   border-top: none !important;
 }
+
 .tab-content > .active {
   display: block;
   visibility: visible;
@@ -1501,6 +1502,10 @@ div.checker input {
   border-bottom: 1px solid #ddd !important;
   color: #0B2161;
 }
+.table > tbody > tr > td {
+  color: #000000;
+}
+
 .badge-success, .bg-green, .bootstrap-switch-success, .btn-success {
   border-color: #ef553a;
   background: #ef553a;

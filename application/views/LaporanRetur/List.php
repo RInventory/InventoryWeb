@@ -8,7 +8,7 @@
             <tr>
               <th>No</th>
               <th>ID Detail</th>
-              <th>Stok Barang</th>
+              <th>Jumlah Barang</th>
               <th>Keterangan Retur</th>
               <th>Kode Barang Retur</th>
               <th>Nama Barang</th>
@@ -23,20 +23,22 @@
           <tbody> 
             <?php $no = 1; 
             foreach ($daftarretur as $Laporan) { ?>
-            <tr>
-              <td><?php echo $no ?></td>
-              <td><?php echo $detail_retur->iddetail_retur ?></td>
-              <td><?php echo $detail_retur->stok_retur ?></td>
-              <td><?php echo $detail_retur->keterangan_barangretur ?></td>
-              <td><?php echo $detail_retur->barang_retur_kode_retur ?></td>
-              <td><?php echo $barang->nama_barang ?></td>
-              <td><?php echo $barang->tmp_simpanbarang ?></td>
-              <td><?php echo $barang->gambar_barang ?></td>
-              <td><?php echo $barang->kategori_id_kategori ?></td>
-              <td><?php echo $barang_retur->tgl_retur ?></td>
-              <td><?php echo $barang_retur->supplier_id_supplier ?></td>
-              <td><?php echo $barang_retur->users_id ?></td>
-            </tr>
+              <div style="background-color: #0B2161; color: #000000">
+                <tr>
+                  <td><?php echo $no ?></td>
+                  <td><?php echo $detail_retur->iddetail_retur ?></td>
+                  <td><?php echo $detail_retur->stok_retur ?></td>
+                  <td><?php echo $detail_retur->keterangan_barangretur ?></td>
+                  <td><?php echo $detail_retur->barang_retur_kode_retur ?></td>
+                  <td><?php echo $barang->nama_barang ?></td>
+                  <td><?php echo $barang->tmp_simpanbarang ?></td>
+                  <td><?php echo $barang->gambar_barang ?></td>
+                  <td><?php echo $barang->kategori_id_kategori ?></td>
+                  <td><?php echo $barang_retur->tgl_retur ?></td>
+                  <td><?php echo $barang_retur->supplier_id_supplier ?></td>
+                  <td><?php echo $barang_retur->users_id ?></td>
+                </tr>
+              </div>
             <?php $no++; } ?>
           </tbody>
         </table>

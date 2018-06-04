@@ -182,9 +182,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <?php echo lang('create_user_password_confirm_label', 'password_confirm');?> <br />
             <?php echo form_input($password_confirm);?>
       </p>
-
-
+      <br>
+      <br>
       <p><?php echo form_submit('submit', lang('create_user_submit_btn'));?></p>
+
 
 <?php echo form_close();?>
     </div>

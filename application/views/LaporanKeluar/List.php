@@ -8,7 +8,7 @@
             <tr>
               <th>No</th>
               <th>ID Detail</th>
-              <th>Stok Barang</th>
+              <th>Jumlah Barang</th>
               <th>Kode Barang Masuk</th>
               <th>Nama Barang</th>
               <th>Tempat Simpan</th>
@@ -22,19 +22,21 @@
           <tbody> 
             <?php $no = 1; 
             foreach ($daftarkeluar as $LaporanKeluar) { ?>
-            <tr>
-              <td><?php echo $no ?></td>
-              <td><?php echo $detail_keluar->iddetail_keluar ?></td>
-              <td><?php echo $detail_keluar->stok_keluar ?></td>
-              <td><?php echo $detail_keluar->barang_keluar_kode_keluar ?></td>
-              <td><?php echo $barang->nama_barang ?></td>
-              <td><?php echo $barang->tmp_simpanbarang ?></td>
-              <td><?php echo $barang->gambar_barang ?></td>
-              <td><?php echo $barang->kategori_id_kategori ?></td>
-              <td><?php echo $barang_keluar->tgl_keluar ?></td>
-              <td><?php echo $barang_keluar->keterangan_keluar ?></td>
-              <td><?php echo $barang_keluar->users_id ?></td>
-            </tr>
+              <div style="background-color: #0B2161; color: #000000">
+                <tr>
+                  <td><?php echo $no ?></td>
+                  <td><?php echo $detail_keluar->iddetail_keluar ?></td>
+                  <td><?php echo $detail_keluar->stok_keluar ?></td>
+                  <td><?php echo $detail_keluar->barang_keluar_kode_keluar ?></td>
+                  <td><?php echo $barang->nama_barang ?></td>
+                  <td><?php echo $barang->tmp_simpanbarang ?></td>
+                  <td><?php echo $barang->gambar_barang ?></td>
+                  <td><?php echo $barang->kategori_id_kategori ?></td>
+                  <td><?php echo $barang_keluar->tgl_keluar ?></td>
+                  <td><?php echo $barang_keluar->keterangan_keluar ?></td>
+                  <td><?php echo $barang_keluar->users_id ?></td>
+                </tr>
+              </div>
             <?php $no++; } ?>
           </tbody>
         </table>

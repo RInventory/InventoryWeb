@@ -1,5 +1,5 @@
 <ul class="nav" id="side-menu">
-    <li>
+    <li class="treeview">
         <a href="<?php echo base_url()?>"><i class="glyphicon glyphicon-home"></i>      Home</a>
     </li>
     <li>
@@ -13,7 +13,7 @@
     <li>
         <a href="#"><i class="glyphicon glyphicon-bed"></i> Kategori<span class="fa arrow"></span></a>
             <ul class="nav nav-second-level">
-                <li>
+                <li class="treeview">
                     <a href="<?php echo base_url()?>Kategori/list_kategori">   Kategori Barang</a>
                 </li>
             </ul>
